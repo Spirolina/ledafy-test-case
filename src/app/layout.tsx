@@ -19,12 +19,7 @@ export default function RootLayout({
   return (
 
     <html lang="en">
-      <head>
-        <meta 
-     http-equiv="Content-Security-Policy"   
-     content="upgrade-insecure-requests" 
-    />
-      </head>
+  
       <body className={inter.className}>
       <GoogleOAuthProvider clientId={process.env.GOOGLE_CLIENT_ID ?? ""}>
          {children} 
